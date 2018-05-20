@@ -94,15 +94,15 @@ body,html{
   float:left;
   margin-top: 10px;
   width:25%;
-  max-height:85.5vh;
-  height:85.5vh;
+  max-height:85.5%;
+  height:85.5%;
   overflow-y: auto;
   margin-top:80px;
   padding-top: 5px;
   position: fixed;
  }
 #leftBar>div{
- height: 15.39vh;
+    height: 18.3%;;
     width: 90%;
     margin-bottom: 5px;
     margin-left:5px;
@@ -169,7 +169,7 @@ body,html{
     margin-top: 5px;
     margin-right: 1px;
     max-height:500px;
-    overflow-y:scroll;
+    overflow-y:auto;
     border-top: 1px solid teal;
     box-shadow: 1px 1px 10px rgba(136,136,136,0.5);top: 44px;
     left: 31px;
