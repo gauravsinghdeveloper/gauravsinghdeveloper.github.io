@@ -24,6 +24,8 @@ app.controller('vLocityController',['$scope','$http','filterFilter','getData',fu
 		 */
 		onloadOfData(data);
 		
+	}).error(function(data){
+		$http
 	});
 	
 	/*
@@ -133,5 +135,5 @@ app.controller('vLocityController',['$scope','$http','filterFilter','getData',fu
 }]);
 
 app.service("getData",['$http',function($http){
-	return $http.jsonp('json/people_(5).json');
+	return $http.get('json/people_(5).json');
 }]);

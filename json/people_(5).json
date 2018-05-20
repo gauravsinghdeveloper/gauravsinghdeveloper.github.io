@@ -1,4 +1,4 @@
-angular.callbacks._0({
+{
   "People": [
     {
       "name": "Andrew Amernante",
@@ -86,4 +86,4 @@ angular.callbacks._0({
       ]
     }
   ]
-})
+}
