@@ -27,9 +27,9 @@
 	}
 	#autosuggest{
 		    width: 100%;
-		        height: 87%;
+		        height: 94%;
     left: 0;
-    max-height: 87%;
+    max-height: 94%;
      overflow-y: auto;
     top: 69px;
 	}
@@ -41,6 +41,7 @@
 	}
 	#searchInputBox{
 		width:75%;
+		margin-top:5px 
 	}
 	#profile {
 	    float: right;
