@@ -1,0 +1,106 @@
+@media screen and (max-width: 1024px){
+	#leftBar{
+		display:none;
+	}
+	#contacts{
+		display: block;
+	    float: left;
+	    margin-top: 20px;
+	    margin-left: 4%;
+	    color:#EEE;
+	    font-size: 24px;
+	    cursor: pointer;
+	}
+	#hamBurger{
+	    width: 25px;
+	    height: 3px;
+	    background-color: #EEE;
+	    margin: 6px 0;
+	}
+	#searchBox {
+	    margin-left: 7%;
+	    width:45%;
+	        height: 25px;
+	}
+	#autosuggest{
+		    width: 100%;
+		        height: 87%;
+    left: 0;
+    max-height: 87%;
+     overflow-y: auto;
+    top: 69px;
+	}
+	#deleteText{
+  display: none;
+}
+	#nameUserName{
+	display: none;
+	}
+	#searchInputBox{
+		width:75%;
+	}
+	#profile {
+	    float: right;
+	    width: 98%;
+	    margin-left:20px;
+    }
+    #wallPaper{
+    	width: 98%;
+    }
+    #nameAndRatingWrapper {
+    width: 100%;
+    float: none;
+	}
+	#buttonDiv {
+    width: 83%;
+    float: none;
+    margin: auto;
+}
+	#contactImageDiv {
+	float:none;
+	margin:0;
+     padding-top: 60px;
+    text-align: center;
+	}
+	#sendMessageButton{
+	padding-top: 0;
+    float: none;
+    margin: auto;
+    margin-top: 13px;
+	}
+	#nameAndRatingWrapper {
+    width: 100%;
+    float: none;
+    margin: auto;
+    text-align: center;
+	}
+	#ratingWrapper {
+        padding-left: 15%;
+    margin-bottom: 7px;
+    margin-top: 5px;
+	}
+	#profileRating {
+    height: 400px;
+	}
+	#hearts {
+    width: 4.6667vw;
+    height: 4.6667vw;
+	}
+	#tablesOfLikes {
+   width:80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#contactDetail {
+    
+    text-align: center;
+    margin: 20px 0px;
+}
+
+#dpAutoSuggest {
+    width: 50px;
+    margin-top:5px;
+}
+#autoSuggestRow {
+    height: 62px;}
+}

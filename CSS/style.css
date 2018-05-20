@@ -1,0 +1,297 @@
+body,html{
+	width:100%;
+	height:100%;
+  font-family: Segoe UI;
+  font-size:16px ;
+  margin: 0;
+    color:#777;
+}
+#header{
+  
+  height:75px;
+  
+  background-color: #008ab4;
+  box-shadow:1px 1px 10px #888888;
+  position:fixed;
+  width: 100%
+  }
+#deleteText{
+ border: none;
+    border-radius: 0px 2px 2px 0px;
+    color: #EEE;;
+    background: rgba(4, 77, 260, 0.7);
+    font-size: 15px;
+    width: 7%;
+    height: 25px;
+    float: right;
+    text-align: center;
+    cursor: pointer;
+    display:block;
+}
+
+#searchInputBox,#searchInputBox:focus{
+  border: none;
+  outline: none;
+  padding-left: 3%;
+  width: 80%;
+   font-size: 15px;
+   background: #EEE;
+}
+
+#searchBox{
+     width: 33%;
+    border-radius: 3px;
+    padding: 0px;
+    
+    float: left;
+    margin-top: 24px;
+    margin-left: 30px;
+    background-color: #EEE;
+}
+#deleteText:focus{
+  outline: none;
+}
+#icon{
+  padding-top:2px ;
+  padding-left:5px;
+}
+
+#dp{
+  height: 60px ;
+  width:60px ;
+  
+  margin-top: 8px;
+    border-radius: 2px;
+}
+#userName{
+  float:right;
+      margin-right: 5%;
+}
+#nameUserName{
+  float: left;
+    margin-top: 26px;
+    margin-right: 18px;
+    color:#EEE;
+    display: block;
+}
+#dpDiv{
+  float: left;
+}
+.arrow-down {
+  float:left ;
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  
+  border-top: 5px solid black;
+  margin-top: 35px;
+    margin-left: 11px;
+}
+#leftBar{
+	display:block;
+	
+  float:left;
+  margin-top: 10px;
+  width:25%;
+  max-height:85.5vh;
+  height:85.5vh;
+  overflow-y: auto;
+  margin-top:80px;
+  padding-top: 5px;
+  position: fixed;
+ }
+#leftBar>div{
+ height: 15.39vh;
+    width: 90%;
+    margin-bottom: 5px;
+    margin-left:5px;
+    padding-left: 20px;
+    padding-top: 6px;
+    box-shadow:1px 1px 10px #888888;
+    border-radius:1px;
+    cursor: pointer;
+}
+
+
+.arrow-right {
+  float:right ;
+  width: 0; 
+  height: 0; 
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid black;
+  margin-top: 8px;
+  margin-left:11.5vw;
+}
+#profile{
+  float: right;
+  
+  width: 73%;
+  min-height: 84.5%;
+  border-radius: 1px;
+  margin-top:85px;
+  margin-bottom:15px;
+  box-shadow: 1px 1px 10px #888888;
+  margin-right: 1%;
+}
+#contactImageDiv{
+  float: left;
+  margin-left: 5%;
+  margin-top: 60px;
+  margin-right: 5%;
+}
+#contactImage{
+  border-radius:  50%;
+   box-shadow: 1px 1px 10px #888888;
+}
+#sendMessageButton{
+  float: left;
+      width: 42vw;
+
+  padding-top: 170px;
+}
+#ratingDiv{
+  float: left;
+  margin-right: 5px;
+
+}
+#ratingWrapper{
+  width: 265px;
+  float: left;
+  padding-top: 10px;
+}
+#autosuggest{
+	    position: absolute;
+    z-index: 1;
+    width: 33%;
+    background: #EEE;;
+    margin-top: 5px;
+    margin-right: 1px;
+    max-height:500px;
+    overflow-y:scroll;
+    border-top: 1px solid teal;
+    box-shadow: 1px 1px 10px rgba(136,136,136,0.5);top: 44px;
+    left: 31px;
+}
+#sendMessage{
+    padding: 8px 12px;
+    font-size: 80%;
+    line-height: 1.42857143;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 1px;
+    background-color: #008ab4;
+    color: #EEE;;
+    height: 45px;
+    width: 100%;
+    float: right;
+    box-shadow: 1px 1px 10px #888888;
+  }
+  #selectedPersonName{
+  	line-height: 10px;
+  }
+  #profileRating{
+    width:100%;
+        height: 280px;
+  }
+  #buttonDiv{
+	  width: 26%;
+	  float: right;
+    }
+   #nameAndRatingWrapper{
+   	width: 47%;
+    float: left;
+   }
+  #wallPaper{
+  	width:73%;
+  	height:157px;
+  background : #008ab4;
+  background-size:100% 245%;
+  	position: absolute;
+  	z-index: -1;
+  }
+  #contactDetail{
+        margin-left: 5%;
+        margin-right: 5%;
+  }
+  #tablesOfLikes{
+          width: 69%;
+    margin-left: 5%;
+    margin-top: 25px;
+    margin-bottom:20px;
+      border: 0.006vw solid rgba(38, 166, 154, 1);
+      box-shadow: 1px 1px 4px rgba(136,136,136,0.4);
+
+  }
+  #tableHeader{
+    background-color: rgba(0, 138, 180, 0.5);
+  }
+  .striped{
+    background-color: rgba(0, 138, 180, 0.1);
+  }
+  tr{
+        height: 40px;
+  }
+  td{
+    text-align: center;
+    width: 21.319444vw;
+  }
+  hr{
+  width: 95%;
+  border-top:1px solid rgba(128,128,128,0.5)	
+  }
+  #hearts{
+    width: 1.6667vw;
+    height:  1.6667vw;
+  }
+  #nameNArrow{
+  
+  	float:left;
+  	    padding-top: 5.5vh;
+  }
+  ::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+}
+#autoSuggestRow{
+	height: 63px;
+	box-shadow: 1px 1px 4px rgba(136,136,136,0.4);
+	margin:10px;
+	cursor: pointer;
+}
+#nameAutoSuggest{
+	float:left;
+	padding-left: 8%;
+    padding-top: 10px;
+    margin-top: 5px;
+}
+#dpAutoSuggest {
+    margin-left: 5%;
+    float: left;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 6px;
+}
+ #autoSuggestRow:hover{
+ 	background: rgba(136,136,136,0.1);
+ }
+ 
+ #contacts{
+		display:none;
+	}

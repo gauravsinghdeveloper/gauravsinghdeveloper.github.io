@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src ="js/app.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="CSS/styleSmallDevice.css">
+</head>
+
+<body ng-app = "vLocityApp" ng-controller="vLocityController">
+<div id = "header">
+	<div id="contacts" ng-if="!toggle" ng-click="search(true)">
+		<div id="hamBurger"></div>
+		<div id="hamBurger"></div>
+		<div id="hamBurger"></div>
+	</div>
+	<div id="contacts" ng-if="toggle" ng-click="closeContacts()">
+		&#10006
+	</div>
+	
+	<div id = "searchBox">
+		<i class="fa fa-search" id="icon"></i>
+		<input id="searchInputBox" type="text" ng-model ="searchText"  placeholder="Search" ng-change="search(false)">
+		<div ng-click="searchText = ''" id = "deleteText"><span id = "cross">&#10006</span></div>	
+		
+	</div>
+	<div id = "userName">
+		<div id = "nameUserName">{{loggedInUser.name}}</div>
+		<div id = "dpDiv"><img ng-src = "{{loggedInUser.img}}" id="dp"></div>
+		<div class="arrow-down"></div>
+	</div>
+</div>
+<div id = "autosuggest" ng-if="filteredPeople.length>0">
+			<div id="autoSuggestRow" ng-repeat="people in  filteredPeople" ng-click="select(people)">
+				
+				<img ng-src = "{{people.img}}" id="dpAutoSuggest">
+				<div id = "nameAutoSuggest"> {{people.name}}</div>
+				
+			</div>
+		</div>
+
+
+<div id = "leftBar" ng-if='list.length>0'>
+	<div ng-repeat = "name in list" id = {{name.name}} class="leftBar" ng-click = "select(name)">
+		<div id=nameNArrow>{{name.name}}
+		</div>
+	</div>
+</div>
+
+<div id = "profile" ng-if='list.length>0'>
+	<div id = "profileRating">
+		<div id = "wallPaper"></div>
+		<div id = "contactImageDiv">
+			<img ng-src = {{selectedPerson.img}} id = "contactImage">
+		</div>
+		<div id = "sendMessageButton">
+			<div id = "nameAndRatingWrapper">
+				<div id="selectedPersonName">{{selectedPerson.name}}</div>
+				<div id = "ratingWrapper">
+				<div id = "ratingDiv" ng-repeat = "rat in ratingArray track by $index">
+					<img ng-if="rat==1" src = "images/heart.png" id ="hearts" >
+					<img ng-if="rat!=1" src = "images/heart-red.png" id ="hearts" >
+				</div>
+				</div>
+			</div>
+			<div id="buttonDiv">
+				<button id = "sendMessage"> Send Message </button>
+			</div>
+		</div>
+		
+	</div>
+	<hr>
+	<div id="contactDetail">
+		{{selectedPerson.Description}}
+	</div>
+	<div id = "tablesOfLikesWrapper">
+		<table id = "tablesOfLikes" cellspacing="0" cellpadding="0">
+			<thead id = "tableHeader">
+				<tr><th>Likes</th><th>Dis Likes</th></tr>
+				
+			</thead>
+			<tbody>
+				<tr ng-repeat = "count in likeDislikeArray track by $index" ng-class-even = "'striped'">
+					<td>{{selectedPerson.Likes[$index]}}</td><td>{{selectedPerson.Dislikes[$index]}}</td>
+				</tr>
+			</tbody>
+		</table>
+		{{selectedPerson.likes.length}}
+	</div>
+</div>
+</body>
+</html>
