@@ -47,7 +47,8 @@
 	    float: right;
     width: 98%;
     margin-left: 20px;
-    height: 94%;
+    height: auto;
+    min-height: 94%;
     }
     #wallPaper{
     	width: 98%;
